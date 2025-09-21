@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <title>Place & Collect</title>
+    <meta name="description" content="walk to collect coins you place on a detected surface. webxr + three.js." />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="ui">
+      <div id="hud">
+        <div class="row"><span>score:</span><strong id="score">0</strong></div>
+        <div class="row"><span>coins:</span><strong id="alive">0</strong></div>
+        <div class="row small" id="status">find a surface, then tap to place the spawn point.</div>
+      </div>
+
+      <div id="controls">
+        <button id="reset">reset</button>
+        <button id="pause">pause</button>
+        <button id="burst" disabled>spawn burst</button>
+      </div>
+    </div>
+
+    <!-- AR enters via XRButton -->
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
